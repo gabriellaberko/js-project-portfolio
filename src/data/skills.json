@@ -1,0 +1,44 @@
+{
+  "skills": [
+    {
+      "title": "Languages",
+      "skills": [
+        "JavaScript (ES6+)",
+        "TypeScript",
+        "CSS3",
+        "HTML5",
+        "SQL"
+      ]
+    },
+    {
+      "title": "Fronted",
+      "skills": [
+        "React & Global State Management",
+        "API Integration",
+        "Responsive Web Design",
+        "Web Accessibility",
+        "Tailwind",
+        "Git"
+      ]
+    },
+    {
+      "title": "Backend",
+      "skills": [
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "HTML5",
+        "SQL"
+      ]
+    },
+    {
+      "title": "Analytics",
+      "skills": [
+        "Google Tag Manager",
+        "BigQuery",
+        "Google Analytics 4",
+        "A/B Testing"
+      ]
+    }
+  ]
+}
