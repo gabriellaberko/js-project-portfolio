@@ -2,9 +2,9 @@ import React from 'react';
 import { ProjectTags } from './ProjectTags';
 import { ProjectTitle } from './ProjectTitle';
 import { ProjectDescription } from './ProjectDescription';
-import { PrimaryButton } from '../buttons/PrimaryButton';
-import { GlobeIcon } from '../svgIcons/GlobeIcon';
-import { GitHubIcon } from '../svgIcons/GitHubIcon';
+import { PrimaryButton } from '../buttonsAndLinks/PrimaryButton';
+import { GlobeIcon } from '../svg/GlobeIcon';
+import { GitHubIcon } from '../svg/GitHubIcon';
 
 
 export const Project = ({ project }) => {

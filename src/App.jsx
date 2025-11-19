@@ -1,11 +1,15 @@
 import React from 'react';
 import { ProjectSection } from './components/sections/ProjectSection';
 import { SkillsSection } from './components/sections/SkillsSection';
+import { ContactSection } from './components/sections/ContactSection';
+import { ProfileImg } from './components/images/ProfileImg';
 
 
 export const App = () => {
   return (
     <>
+      <p>Hi there, I'm</p>
+      <ProfileImg />
       <h1>Gabriella Berkowicz</h1>
       <p>Frontend Developer with a Background in Web Analytics</p>
       <p>I'm a frontend developer passionate about building user-focused and data-informed web experiences with JavaScript. My goal is to continue to grow as a developer while bringing curiosity, creativity, and an analytical mindset to every project I take on.
@@ -13,6 +17,7 @@ export const App = () => {
       </p>
       <SkillsSection />
       <ProjectSection />
+      <ContactSection />
 
     </>
   )
