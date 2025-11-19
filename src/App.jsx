@@ -3,6 +3,7 @@ import { ProjectSection } from './components/sections/ProjectSection';
 import { SkillsSection } from './components/sections/SkillsSection';
 import { ContactSection } from './components/sections/ContactSection';
 import { ProfileImg } from './components/images/ProfileImg';
+import { TechSection } from './components/sections/TechSection';
 
 
 export const App = () => {
@@ -17,6 +18,7 @@ export const App = () => {
       </p>
       <SkillsSection />
       <ProjectSection />
+      <TechSection />
       <ContactSection />
 
     </>
