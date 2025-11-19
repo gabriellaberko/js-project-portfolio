@@ -1,7 +1,7 @@
 import React from 'react';
 
-export const SecondaryButton = ({ buttonText} ) => {
+export const SecondaryButton = ({ children} ) => {
   return (
-    <button className="secondary-btn"><a>{buttonText}</a></button>
+    <button className="secondary-btn">{children}</button>
   );
 }
