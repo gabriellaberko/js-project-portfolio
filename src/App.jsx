@@ -1,5 +1,5 @@
 import React from 'react';
-import { ProjectSection } from './components/projects/ProjectSection';
+import { ProjectSection } from './components/sections/ProjectSection';
 
 
 export const App = () => {

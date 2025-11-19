@@ -1,7 +1,9 @@
 import React from 'react';
 
-export const ProjectTags = ({ tags }) => {
+export const ProjectTags = ({ tag }) => {
   return (
-    <h2>{tags}</h2>
+    <div>
+      <p>{tag}</p>
+    </div>
   );
 }

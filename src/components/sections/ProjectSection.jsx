@@ -1,11 +1,12 @@
 import React from 'react';
 import projectData from '../../data/projects.json';
-import { Project } from './Project';
+import { Project } from '../projects/Project';
+import { SectionTitle } from '../typography/SectionTitle';
 
 export const ProjectSection = () => {
   return (
     <section className="project-section">
-      <h1>Projects</h1>
+      <SectionTitle>Projects</SectionTitle>
       <div className = "projects-container">
       {projectData.projects.map((project, index) => (
           <Project key = {index} project = {project}  />
