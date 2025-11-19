@@ -2,14 +2,12 @@ import React from 'react';
 import { ProjectTags } from './ProjectTags';
 import { ProjectTitle } from './ProjectTitle';
 import { ProjectDescription } from './ProjectDescription';
-// import { ProjectLinks } from './ProjectLinks';
 import { PrimaryButton } from '../buttons/PrimaryButton';
 import { GlobeIcon } from '../svgIcons/GlobeIcon';
 import { GitHubIcon } from '../svgIcons/GitHubIcon';
 
 
 export const Project = ({ project }) => {
-  console.log(GlobeIcon);
       return (
         <div className = "project-div">
           <div className="tags">
@@ -27,8 +25,6 @@ export const Project = ({ project }) => {
             <GitHubIcon />
             View Code
           </PrimaryButton>
-
-          
         </div>
     );
 

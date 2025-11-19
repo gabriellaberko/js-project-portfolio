@@ -1,7 +1,7 @@
 import React from 'react';
 
-export const SkillsTitle = ({ text }) => {
+export const SkillsTitle = ({ title }) => {
   return (
-    <h3>{text}</h3>
+    <h3>{title}</h3>
   );
 }

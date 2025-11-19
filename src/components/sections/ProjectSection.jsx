@@ -8,10 +8,10 @@ export const ProjectSection = () => {
     <section className="project-section">
       <SectionTitle>Projects</SectionTitle>
       <div className = "projects-container">
-      {projectData.projects.map((project, index) => (
-          <Project key = {index} project = {project}  />
-      ))}
-    </div>
+        {projectData.projects.map((project, index) => (
+            <Project key = {index} project = {project}  />
+        ))}
+      </div>
   </section>
   );
 }
