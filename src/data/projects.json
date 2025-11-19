@@ -11,8 +11,8 @@
         "CSS3",
         "HTML5"
       ],
-      "netlify": "link",
-      "github": "link"
+      "netlify": "https://swe-weather-app.netlify.app/",
+      "github": "https://github.com/gabriellaberko/js-project-weather-app"
     },
     {
       "title": "Accessible Quiz Game - TypeScript, Tailwind & API Integration",
@@ -25,8 +25,8 @@
         "CSS3",
         "HTML5"
       ],
-      "netlify": "link",
-      "github": "link"
+      "netlify": "https://quizbonanza.netlify.app/",
+      "github": "https://github.com/gabriellaberko/js-project-accessibility"
     },
     {
       "title": "Recipe Library - JavaScript, API Integration & Local Storage",
@@ -38,8 +38,8 @@
         "CSS3",
         "HTML5"
       ],
-      "netlify": "link",
-      "github": "link"
+      "netlify": "https://js-recipe-library.netlify.app/",
+      "github": "https://github.com/gabriellaberko/js-project-recipe-library"
     }
   ]
 }
