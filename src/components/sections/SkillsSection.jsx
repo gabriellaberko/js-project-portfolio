@@ -3,9 +3,6 @@ import skillsData from '../../data/skills.json';
 import { SkillsBox } from '../skills/SkillsBox';
 import { SectionTitle } from '../typography/SectionTitle';
 
-skillsData.skills.map((skill, index) => (
-  console.log(index, skill.title)
-))
 
 export const SkillsSection = () => {
   return (
