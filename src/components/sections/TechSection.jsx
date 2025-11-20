@@ -1,11 +1,11 @@
 import React from 'react';
-import { SectionTitle } from '../typography/SectionTitle';
+import { Typography } from '../typography/typography';
 
 
 export const TechSection = () => {
   return (
     <section className="tech-section">
-      <SectionTitle>Tech</SectionTitle>
+      <Typography className="section-title" variant="h2">Tech</Typography>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit accusantium totam neque veritatis minima porro facere. Quaerat nostrum, temporibus aspernatur corrupti repellat sunt ipsum? Iusto eaque sequi quod voluptate dolore!</p>
     </section>
   );

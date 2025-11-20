@@ -1,14 +1,14 @@
 import React from 'react';
 import projectData from '../../data/projects.json';
 import { Project } from '../projects/Project';
-import { SectionTitle } from '../typography/SectionTitle';
 import { SecondaryButton } from '../buttonsAndLinks/SecondaryButton';
 import { ArrowIcon } from '../svg/ArrowIcon';
+import { Typography } from '../typography/typography';
 
 export const ProjectSection = () => {
   return (
     <section className="project-section">
-      <SectionTitle>Projects</SectionTitle>
+      <Typography className="section-title" variant="h2">Projects</Typography>
       <div className = "projects-container">
         {projectData.projects.map((project, index) => (
             <Project key = {index} project = {project}  />
