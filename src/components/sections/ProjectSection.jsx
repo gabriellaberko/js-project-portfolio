@@ -1,6 +1,6 @@
 import React from 'react';
 import projectData from '../../data/projects.json';
-import { Project } from '../projects/Project';
+import { Project } from '../cards/Project';
 import { SecondaryButton } from '../buttons/SecondaryButton';
 import { ArrowIcon } from '../icons/ArrowIcon';
 import { Typography } from '../typography/typography';

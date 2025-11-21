@@ -4,6 +4,7 @@ import { ProjectSection } from './components/sections/ProjectSection';
 import { SkillsSection } from './components/sections/SkillsSection';
 import { ContactSection } from './components/sections/ContactSection';
 import { TechSection } from './components/sections/TechSection';
+import { ArticleSection } from './components/sections/ArticleSection';
 
 
 export const App = () => {
@@ -13,6 +14,7 @@ export const App = () => {
       <SkillsSection />
       <ProjectSection />
       <TechSection />
+      <ArticleSection />
       <ContactSection />
 
     </>

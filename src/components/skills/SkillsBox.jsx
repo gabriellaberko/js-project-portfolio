@@ -1,5 +1,5 @@
 import React from 'react';
-import { Tags } from '../projects/Tags';
+import { Tags } from '../cards/Tags';
 import { SkillsList } from './SkillsList';
 
 export const SkillsBox = ({ skillObj } ) => {
