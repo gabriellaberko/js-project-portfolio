@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Typography = ({ variant, className, children }) => {
+export const Typography = ({ variant="p", className="regular-text", children }) => {
   let ComponentEl = variant;
   return (
     <ComponentEl className={className}>
@@ -8,9 +8,3 @@ export const Typography = ({ variant, className, children }) => {
     </ComponentEl>
   );
 }
-
-//set default values
-Typography.defaultProps = {
-  variant: "p",
-  className: "regular-text",
-};

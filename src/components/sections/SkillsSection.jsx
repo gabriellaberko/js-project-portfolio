@@ -10,7 +10,7 @@ export const SkillsSection = () => {
        <Typography className="section-title" variant="h2">Skills</Typography>
       <div className = "skills-container">
         {skillsData.skills.map((skillObj, index) => (
-            <SkillsBox key = {index} skillObj = {skillObj}  />
+          <SkillsBox key = {index} skillObj = {skillObj}  />
         ))}
       </div>
     </section>

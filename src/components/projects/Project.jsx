@@ -1,10 +1,9 @@
 import React from 'react';
-import { ProjectTags } from './ProjectTags';
-import { ProjectTitle } from './ProjectTitle';
-import { ProjectDescription } from './ProjectDescription';
+import { Tags } from './Tags';
 import { PrimaryButton } from '../buttonsAndLinks/PrimaryButton';
 import { GlobeIcon } from '../svg/GlobeIcon';
 import { GitHubIcon } from '../svg/GitHubIcon';
+import { Typography } from '../typography/typography';
 
 
 export const Project = ({ project }) => {
@@ -12,11 +11,11 @@ export const Project = ({ project }) => {
         <div className = "project-div">
           <div className="tags">
           {project.tags.map((tag, index) => (
-            <ProjectTags key={index} tag = {tag}/>
+            <Tags className="project-tag" key={index} children = {tag}/>
           ))}
           </div>
-          <ProjectTitle title = {project.title} />
-          <ProjectDescription description = {project.description} />
+          <Typography className="card-title" variant="h3">{project.title}</Typography>
+          <Typography>{project.description}</Typography>
           <PrimaryButton link={project.netlify}>
             <GlobeIcon />
             Live Demo
@@ -29,3 +28,4 @@ export const Project = ({ project }) => {
     );
 
 }
+
