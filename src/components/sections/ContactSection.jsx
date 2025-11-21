@@ -1,7 +1,7 @@
 import React from 'react';
-import { GitHubIcon } from '../svg/GitHubIcon';
-import { LinkedInIcon } from '../svg/LinkedinIcon'; 
-import { LinkIcon } from '../buttonsAndLinks/LinkIcon';
+import { GitHubIcon } from '../icons/GitHubIcon';
+import { LinkedInIcon } from '../icons/LinkedinIcon'; 
+import { LinkIcon } from '../icons/LinkIcon';
 import { ProfileImg } from '../images/ProfileImg';
 import { Typography } from '../typography/typography';
 

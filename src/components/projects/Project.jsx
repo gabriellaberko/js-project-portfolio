@@ -1,8 +1,8 @@
 import React from 'react';
 import { Tags } from './Tags';
-import { PrimaryButton } from '../buttonsAndLinks/PrimaryButton';
-import { GlobeIcon } from '../svg/GlobeIcon';
-import { GitHubIcon } from '../svg/GitHubIcon';
+import { PrimaryButton } from '../buttons/PrimaryButton';
+import { GlobeIcon } from '../icons/GlobeIcon';
+import { GitHubIcon } from '../icons/GitHubIcon';
 import { Typography } from '../typography/typography';
 
 

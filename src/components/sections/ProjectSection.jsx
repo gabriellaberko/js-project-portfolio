@@ -1,8 +1,8 @@
 import React from 'react';
 import projectData from '../../data/projects.json';
 import { Project } from '../projects/Project';
-import { SecondaryButton } from '../buttonsAndLinks/SecondaryButton';
-import { ArrowIcon } from '../svg/ArrowIcon';
+import { SecondaryButton } from '../buttons/SecondaryButton';
+import { ArrowIcon } from '../icons/ArrowIcon';
 import { Typography } from '../typography/typography';
 
 export const ProjectSection = () => {
