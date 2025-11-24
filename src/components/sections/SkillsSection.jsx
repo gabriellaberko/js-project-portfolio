@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import skillsData from '../../data/skills.json';
 import { SkillsBox } from '../skills/SkillsBox';
 import { Typography } from '../typography/typography';
+import { StyledSection } from './Section.styled';
 
 
 export const SkillsSection = () => {
@@ -18,11 +19,6 @@ export const SkillsSection = () => {
   );
 }
 
-export const StyledSection = styled.section `
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
 
 
 export const StyledWrapper= styled.div`

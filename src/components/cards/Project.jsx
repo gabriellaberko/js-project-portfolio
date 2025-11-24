@@ -6,19 +6,21 @@ import { SecondaryLinkButton } from '../buttons/LinkButton';
 import { GlobeIcon } from '../icons/GlobeIcon';
 import { GitHubIcon } from '../icons/GitHubIcon';
 import { Typography } from '../typography/typography';
-import { StyledProjectDiv } from './Project.styled';
-import { StyledContentDiv } from './Project.styled';
-import { StyledButtonDiv } from './Project.styled';
+import { StyledCardDiv } from './Card.styled';
+import { StyledContentDiv } from './Card.styled';
+import { StyledTextDiv } from './Card.styled';
+import { StyledButtonDiv } from './Card.styled';
 import { StyledTagContainer } from './Tags.styled';
 
 export const Project = ({ project }) => {
       return (
-        <StyledProjectDiv>
+        <StyledCardDiv>
           <Img src={project.image} alt="project" />
           <StyledContentDiv>
+            <StyledTextDiv>
               <Typography as="h3" size="medium" weight="regular">{project.title}</Typography>
               <Typography>{project.description}</Typography>
-            </StyledContentDiv>
+            </StyledTextDiv>
             <div>
             <Typography weight="medium">Tech:</Typography>
             <StyledTagContainer>
@@ -27,6 +29,7 @@ export const Project = ({ project }) => {
               ))}
             </StyledTagContainer>
             </div>
+            </StyledContentDiv>
             <StyledButtonDiv>
               <PrimaryLinkButton link={project.netlify}>
                 <GlobeIcon />
@@ -37,7 +40,7 @@ export const Project = ({ project }) => {
                 View Code
               </SecondaryLinkButton>
             </StyledButtonDiv>
-        </StyledProjectDiv>
+        </StyledCardDiv>
     );
 
 }

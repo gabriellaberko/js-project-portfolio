@@ -18,7 +18,7 @@ const weightMapping = {
 };
 
 
-export const StyledTypography = styled.p`
+export const StyledTypography = styled.div`
   margin: 0 0 16px 0;
   padding: 0;
   font-size: ${({ size }) => sizeMapping[size]};

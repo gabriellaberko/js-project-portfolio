@@ -1,27 +1,25 @@
 import React from 'react';
-import { Tags } from './Tags';
-import { PrimaryLinkButton } from '../buttons/LinkButton';
-import { GlobeIcon } from '../icons/GlobeIcon';
 import { Typography } from '../typography/typography';
 import { SecondaryButton } from '../buttons/Button';
 import { Img } from '../images/Img';
+import { StyledCardDiv } from './Card.styled';
+import { StyledTextDiv } from './Card.styled';
 
 
 export const Article = ({ article }) => {
       return (
-        <div className="article-div">
+        <StyledCardDiv>
           <Img src={article.image} alt="article" />
-          <div className = "article-content">
-            <div className="tags">
-              <Tags className="article-tag">{article.tag}</Tags>
+          <div className="tags">
+              <Typography>{article.tag}</Typography>
             </div>
+          <StyledTextDiv>
             <Typography as="h3" size="medium" weight="regular">{article.title}</Typography>
             <Typography>{article.content}</Typography>
+            </StyledTextDiv>
             <SecondaryButton>
               View article 
             </SecondaryButton>
-          </div>
-        </div>
+        </StyledCardDiv>
     );
-
 }

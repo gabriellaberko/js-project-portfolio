@@ -8,8 +8,8 @@
         "JavaScript",
         "TypeScript",
         "REST API",
-        "CSS3",
-        "HTML5"
+        "CSS",
+        "HTML"
       ],
       "netlify": "https://swe-weather-app.netlify.app/",
       "github": "https://github.com/gabriellaberko/js-project-weather-app"

@@ -3,16 +3,24 @@ import articleData from '../../data/articles.json';
 import { Article } from '../cards/Article';
 import { Typography } from '../typography/typography';
 import { StyledCardContainer } from '../cards/CardContainer.styled';
+import styled from 'styled-components';
 
 export const ArticleSection = () => {
   return (
-    <section className="article-section">
-      <Typography as="h2" size="large" weight="bold">My words</Typography>
+    <StyledSection>
+      <Typography as="h2" size="large" weight="bold">My Journey</Typography>
       <StyledCardContainer>
         {articleData.articles.map((article, index) => (
             <Article key = {index} article = {article}  />
         ))}
       </StyledCardContainer>
-  </section>
+  </StyledSection>
   );
 }
+
+export const StyledSection = styled.section `
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+`;
