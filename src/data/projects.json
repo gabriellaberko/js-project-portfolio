@@ -7,7 +7,7 @@
       "tags": [
         "JavaScript",
         "TypeScript",
-        "API",
+        "REST API",
         "CSS3",
         "HTML5"
       ],
@@ -21,9 +21,10 @@
       "tags": [
         "JavaScript",
         "TypeScript",
-        "API",
-        "CSS3",
-        "HTML5"
+        "REST API",
+        "CSS",
+        "HTML",
+        "Tailwind"
       ],
       "netlify": "https://quizbonanza.netlify.app/",
       "github": "https://github.com/gabriellaberko/js-project-accessibility"
@@ -34,9 +35,9 @@
       "description": "This recipe library project is built upon Spoonacular’s REST API. It features search, sorting, and filtering, as well as functionality to save favorite recipes. Local storage is used to cache previously fetched recipes and the user’s favorite recipes.",
       "tags": [
         "JavaScript",
-        "APIs",
-        "CSS3",
-        "HTML5"
+        "REST API",
+        "CSS",
+        "HTML"
       ],
       "netlify": "https://js-recipe-library.netlify.app/",
       "github": "https://github.com/gabriellaberko/js-project-recipe-library"

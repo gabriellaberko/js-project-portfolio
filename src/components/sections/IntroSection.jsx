@@ -25,13 +25,16 @@ export const StyledSection = styled.section `
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  gap: 32px;
 
   @media (min-width: 768px) {
     flex-direction: row;
+    gap: 32px;
   }
 `;
 
 export const StyledWrapper = styled.div `
+
+@media (min-width: 768px) {
   width: 60%;
+  }
 `;

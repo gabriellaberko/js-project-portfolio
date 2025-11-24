@@ -1,10 +1,11 @@
 import React from 'react';
 import { Typography } from '../typography/typography';
+import { StyledTag } from './Tags.styled';
 
-export const Tags = ({ className, children }) => {
+export const Tags = ({ children }) => {
   return (
-    <div className={className}>
-      <Typography weight="medium">{children}</Typography>
-    </div>
+    <StyledTag>
+      <p>{children}</p>
+    </StyledTag>
   );
 }

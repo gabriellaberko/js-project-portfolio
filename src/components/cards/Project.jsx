@@ -7,20 +7,26 @@ import { GlobeIcon } from '../icons/GlobeIcon';
 import { GitHubIcon } from '../icons/GitHubIcon';
 import { Typography } from '../typography/typography';
 import { StyledProjectDiv } from './Project.styled';
+import { StyledContentDiv } from './Project.styled';
 import { StyledButtonDiv } from './Project.styled';
+import { StyledTagContainer } from './Tags.styled';
 
 export const Project = ({ project }) => {
       return (
         <StyledProjectDiv>
           <Img src={project.image} alt="project" />
-          <div className = "project-content">
-            <div className="tags">
-            {project.tags.map((tag, index) => (
-              <Tags className="project-tag" key={index} children = {tag}/>
-            ))}
+          <StyledContentDiv>
+              <Typography as="h3" size="medium" weight="regular">{project.title}</Typography>
+              <Typography>{project.description}</Typography>
+            </StyledContentDiv>
+            <div>
+            <Typography weight="medium">Tech:</Typography>
+            <StyledTagContainer>
+              {project.tags.map((tag, index) => (
+                <Tags key={index} children = {tag}/>
+              ))}
+            </StyledTagContainer>
             </div>
-            <Typography as="h3" size="medium" weight="regular">{project.title}</Typography>
-            <Typography>{project.description}</Typography>
             <StyledButtonDiv>
               <PrimaryLinkButton link={project.netlify}>
                 <GlobeIcon />
@@ -31,7 +37,6 @@ export const Project = ({ project }) => {
                 View Code
               </SecondaryLinkButton>
             </StyledButtonDiv>
-          </div>
         </StyledProjectDiv>
     );
 

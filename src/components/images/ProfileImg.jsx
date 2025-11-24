@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 export const ProfileImg = () => {
   return (
-    <StyledImg src="/profile-circle.png" alt="profile picture" />
+    <StyledImg src="/Frame.png" alt="profile picture" />
   );
 }
 

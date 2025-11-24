@@ -29,11 +29,11 @@ export const StyledWrapper= styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 18px;
 
 
   @media (min-width: 768px) {
     flex-direction: row;
-    align-items: center;
 
   }
 `;
