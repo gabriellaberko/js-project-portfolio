@@ -1,23 +1,23 @@
 import React from 'react';
 import { Tags } from './Tags';
-import { PrimaryButton } from '../buttons/PrimaryButton';
+import { PrimaryLinkButton } from '../buttons/LinkButton';
 import { GlobeIcon } from '../icons/GlobeIcon';
 import { Typography } from '../typography/typography';
-import { SecondaryButton } from '../buttons/SecondaryButton';
+import { SecondaryButton } from '../buttons/Button';
+import { Img } from '../images/Img';
 
 
 export const Article = ({ article }) => {
       return (
         <div className="article-div">
-          <img src={article.image} alt="article" />
+          <Img src={article.image} alt="article" />
           <div className = "article-content">
             <div className="tags">
               <Tags className="article-tag">{article.tag}</Tags>
             </div>
-            <Typography className="card-title" variant="h3">{article.title}</Typography>
+            <Typography as="h3" size="medium" weight="regular">{article.title}</Typography>
             <Typography>{article.content}</Typography>
-            <SecondaryButton className="primary-btn">
-              <GlobeIcon />
+            <SecondaryButton>
               View article 
             </SecondaryButton>
           </div>

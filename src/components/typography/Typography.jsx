@@ -1,10 +1,11 @@
 import React from 'react';
+import { StyledTypography } from './Typography.styled.js';
 
-export const Typography = ({ variant="p", className="regular-text", children }) => {
-  let ComponentEl = variant;
+
+export const Typography = ({ element="p", size="small", weight="regular", children }) => {
   return (
-    <ComponentEl className={className}>
+    <StyledTypography as={element} size={size} weight={weight}>
       {children}
-    </ComponentEl>
+    </StyledTypography>
   );
 }

@@ -1,34 +1,38 @@
 import React from 'react';
 import { Tags } from './Tags';
-import { PrimaryButton } from '../buttons/PrimaryButton';
+import { Img } from '../images/Img';
+import { PrimaryLinkButton } from '../buttons/LinkButton';
+import { SecondaryLinkButton } from '../buttons/LinkButton';
 import { GlobeIcon } from '../icons/GlobeIcon';
 import { GitHubIcon } from '../icons/GitHubIcon';
 import { Typography } from '../typography/typography';
-
+import { StyledProjectDiv } from './Project.styled';
+import { StyledButtonDiv } from './Project.styled';
 
 export const Project = ({ project }) => {
       return (
-        <div className="project-div">
-          <img src={project.image} alt="project" />
+        <StyledProjectDiv>
+          <Img src={project.image} alt="project" />
           <div className = "project-content">
             <div className="tags">
             {project.tags.map((tag, index) => (
               <Tags className="project-tag" key={index} children = {tag}/>
             ))}
             </div>
-            <Typography className="card-title" variant="h3">{project.title}</Typography>
+            <Typography as="h3" size="medium" weight="regular">{project.title}</Typography>
             <Typography>{project.description}</Typography>
-            <PrimaryButton link={project.netlify}>
-              <GlobeIcon />
-              Live Demo
-            </PrimaryButton>
-            <PrimaryButton link={project.github}>
-              <GitHubIcon />
-              View Code
-            </PrimaryButton>
+            <StyledButtonDiv>
+              <PrimaryLinkButton link={project.netlify}>
+                <GlobeIcon />
+                Live Demo
+              </PrimaryLinkButton>
+              <SecondaryLinkButton link={project.github}>
+                <GitHubIcon />
+                View Code
+              </SecondaryLinkButton>
+            </StyledButtonDiv>
           </div>
-        </div>
+        </StyledProjectDiv>
     );
 
 }
-

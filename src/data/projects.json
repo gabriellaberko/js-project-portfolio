@@ -1,8 +1,8 @@
 {
   "projects": [
     {
-      "title": "Weather App - TypeScript & API Integration",
-      "image": "https://images.unsplash.com/photo-1520792532857-293bd046307a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2370&q=80",
+      "title": "Weather App",
+      "image": "/weather-app.png",
       "description": "A TypeScript-based weather app built with SMHI’s Open Data REST API. It displays the current weather conditions and weather forecast for any locations in Sweden. The project focuses on API integration, clean UI, and structured TypeScript code.",
       "tags": [
         "JavaScript",
@@ -15,8 +15,8 @@
       "github": "https://github.com/gabriellaberko/js-project-weather-app"
     },
     {
-      "title": "Accessible Quiz Game - TypeScript, Tailwind & API Integration",
-      "image": "https://images.unsplash.com/photo-1557008075-7f2c5efa4cfd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2497&q=80",
+      "title": "Accessible Quiz Game",
+      "image": "/quiz-game.png",
       "description": "A quiz game built with TypeScript and Open Trivia Database’s REST API, styled with Tailwind CSS. Accessibility was a key focus and the app scored highly on Wave and Lighthouse tests, and supports full keyboard navigation. ",
       "tags": [
         "JavaScript",
@@ -29,8 +29,8 @@
       "github": "https://github.com/gabriellaberko/js-project-accessibility"
     },
     {
-      "title": "Recipe Library - JavaScript, API Integration & Local Storage",
-      "image": "https://images.unsplash.com/photo-1557008075-7f2c5efa4cfd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2497&q=80",
+      "title": "Recipe Library",
+      "image": "/recipe-library.png",
       "description": "This recipe library project is built upon Spoonacular’s REST API. It features search, sorting, and filtering, as well as functionality to save favorite recipes. Local storage is used to cache previously fetched recipes and the user’s favorite recipes.",
       "tags": [
         "JavaScript",
