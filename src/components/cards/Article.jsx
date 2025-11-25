@@ -14,7 +14,7 @@ export const Article = ({ article }) => {
               <Typography>{article.tag}</Typography>
             </div>
           <StyledTextDiv>
-            <Typography as="h3" size="medium" weight="regular">{article.title}</Typography>
+            <Typography as="h3">{article.title}</Typography>
             <Typography>{article.content}</Typography>
             </StyledTextDiv>
             <SecondaryButton>

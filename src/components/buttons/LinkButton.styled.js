@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { theme } from "../theme/Theme.styled";
 
 export const StyledLinkButtonFilled = styled.a`
   padding: 8px 16px;
@@ -19,7 +20,7 @@ export const StyledLinkButtonFilled = styled.a`
   box-shadow: 0 4px 6px rgba(0,0,0,0.12);
   }
 
-  @media (min-width: 768px) {
+  @media ${theme.media.desktop}  {
     flex: 1;
   }
 `;
@@ -42,7 +43,8 @@ export const StyledLinkButtonOutlined = styled.a`
   box-shadow: 0 4px 6px rgba(0,0,0,0.12);
   }
 
-  @media (min-width: 768px) {
+  @media ${theme.media.desktop} {
     flex: 1;
   }
 `;
+

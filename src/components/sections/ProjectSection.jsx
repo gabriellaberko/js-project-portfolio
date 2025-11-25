@@ -8,7 +8,7 @@ import styled from 'styled-components';
 export const ProjectSection = () => {
   return (
     <StyledSection>
-      <Typography as="h2" size="large" weight="bold">Featured Projects</Typography>
+      <Typography as="h2">Featured Projects</Typography>
       <StyledCardContainer>
         {projectData.projects.map((project, index) => (
             <Project key = {index} project = {project}  />

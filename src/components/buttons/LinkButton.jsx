@@ -17,7 +17,7 @@ export const PrimaryLinkButton = ({ children, link }) => {
 export const SecondaryLinkButton = ({ children, link }) => {
   return (
     <StyledLinkButtonOutlined 
-      className="primary-btn"
+      className="secondary-btn"
       href={link}
       target="_blank"
     >

@@ -18,16 +18,16 @@ export const Project = ({ project }) => {
           <Img src={project.image} alt="project" />
           <StyledContentDiv>
             <StyledTextDiv>
-              <Typography as="h3" size="medium" weight="regular">{project.title}</Typography>
+              <Typography as="h3">{project.title}</Typography>
               <Typography>{project.description}</Typography>
             </StyledTextDiv>
             <div>
-            <Typography weight="medium">Tech:</Typography>
-            <StyledTagContainer>
-              {project.tags.map((tag, index) => (
-                <Tags key={index} children = {tag}/>
-              ))}
-            </StyledTagContainer>
+              <Typography weight="bold">Tech:</Typography>
+              <StyledTagContainer>
+                {project.tags.map((tag, index) => (
+                  <Tags key={index} children = {tag}/>
+                ))}
+              </StyledTagContainer>
             </div>
             </StyledContentDiv>
             <StyledButtonDiv>

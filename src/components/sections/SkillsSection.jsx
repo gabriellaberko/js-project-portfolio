@@ -9,7 +9,7 @@ import { StyledSection } from './Section.styled';
 export const SkillsSection = () => {
   return (
     <StyledSection>
-       <Typography as="h2" size="large" weight="bold">Skills</Typography>
+       <Typography as="h2">Skills</Typography>
       <StyledWrapper>
         {skillsData.skills.map((skillObj, index) => (
           <SkillsBox key = {index} skillObj = {skillObj}  />

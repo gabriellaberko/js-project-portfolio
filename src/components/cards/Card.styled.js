@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { theme } from "../theme/Theme.styled";
 
 export const StyledCardDiv = styled.div`
   background-color: white;
@@ -15,8 +16,7 @@ export const StyledCardDiv = styled.div`
 
   &:hover {
     transform: translate(0, -5px);
-    outline: 2px solid #FD6F00; 
-      /* box-shadow: 0 4px 6px rgba(0,0,0,0.12); */
+    /* box-shadow: 0 4px 6px rgba(0,0,0,0.12); */
     box-shadow: 0 0 8px 4px rgba(253, 111, 0, 0.2);
   }
 `;
@@ -50,9 +50,11 @@ export const StyledTextDiv = styled.div `
 export const StyledButtonDiv = styled.div `
   display: flex;
   flex-direction: column;
+  align-items: column;
   gap: 16px;
 
-  @media (min-width: 768px) {
+
+  @media ${theme.media.desktop} {
     flex-direction: row;
   }
 `;

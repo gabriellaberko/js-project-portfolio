@@ -8,7 +8,7 @@ import styled from 'styled-components';
 export const ArticleSection = () => {
   return (
     <StyledSection>
-      <Typography as="h2" size="large" weight="bold">My Journey</Typography>
+      <Typography as="h2">My Journey</Typography>
       <StyledCardContainer>
         {articleData.articles.map((article, index) => (
             <Article key = {index} article = {article}  />

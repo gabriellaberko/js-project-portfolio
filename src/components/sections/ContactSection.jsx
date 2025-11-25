@@ -11,10 +11,10 @@ export const ContactSection = () => {
       <StyledWrapper>
           <Img src="/profile-circle.png" alt="" />
           <StyledContent>
-            <Typography as="h2" size="large" weight="bold">Let's Talk!</Typography>
-            <Typography weight="medium">Gabriella Berkowicz</Typography>
-            <Typography weight="medium">+46(0) 736 37 46 46</Typography>
-            <Typography weight="medium">gabriellaberko@live.se</Typography>
+            <Typography as="h2">Let's Talk!</Typography>
+            <Typography as="h3">Gabriella Berkowicz</Typography>
+            <Typography as="h3">+46(0) 736 37 46 46</Typography>
+            <Typography as="h3">gabriellaberko@live.se</Typography>
             <IconsContainer />
           </StyledContent>
       </StyledWrapper>
