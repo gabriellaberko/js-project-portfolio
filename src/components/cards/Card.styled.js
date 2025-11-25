@@ -29,11 +29,13 @@ export const StyledContentDiv = styled.div`
 `;
 
 export const StyledTextDiv = styled.div `
-  height: 200px;
+  height: 160px;
   overflow: hidden;
   padding-bottom: 1em; 
   position: relative;
+`;
 
+export const StyledTextDivFaded = styled(StyledTextDiv)`
   // fade end of text content
   &::after {
     content: '';

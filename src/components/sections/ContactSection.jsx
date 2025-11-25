@@ -9,7 +9,7 @@ export const ContactSection = () => {
   return (
     <section>
       <StyledWrapper>
-          <Img src="/profile-circle.png" alt="" />
+          <Img src="/profile-circle.png" alt="profile picture" height="400px"/>
           <StyledContent>
             <Typography as="h2">Let's Talk!</Typography>
             <Typography as="h3">Gabriella Berkowicz</Typography>

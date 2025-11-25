@@ -3,7 +3,7 @@ import { Typography } from '../typography/typography';
 import { SecondaryButton } from '../buttons/Button';
 import { Img } from '../images/Img';
 import { StyledCardDiv } from './Card.styled';
-import { StyledTextDiv } from './Card.styled';
+import { StyledTextDivFaded } from './Card.styled';
 
 
 export const Article = ({ article }) => {
@@ -13,10 +13,10 @@ export const Article = ({ article }) => {
           <div className="tags">
               <Typography>{article.tag}</Typography>
             </div>
-          <StyledTextDiv>
+          <StyledTextDivFaded>
             <Typography as="h3">{article.title}</Typography>
             <Typography>{article.content}</Typography>
-            </StyledTextDiv>
+            </StyledTextDivFaded>
             <SecondaryButton>
               View article 
             </SecondaryButton>

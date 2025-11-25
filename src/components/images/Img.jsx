@@ -1,13 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 
-export const Img = ({ src, alt }) => {
+export const Img = ({ src, alt, height="200px" }) => {
   return (
-    <StyledImg src={src} alt={alt} />
+    <StyledImg src={src} alt={alt} height={height}/>
   );
 }
 
 const StyledImg = styled.img`
-  height: 300px;
+  height: ${({ height }) => height};
   object-fit: contain;
 `;
