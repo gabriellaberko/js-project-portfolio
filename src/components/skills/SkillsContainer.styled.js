@@ -1,12 +1,14 @@
 import styled from "styled-components";
+import { theme } from "../theme/Theme.styled";
 
 export const StyledSkillsContainer = styled.div`
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  align-items: stretch; 
-  
-  @media (min-width: 768px) {
+  gap: 18px;
+
+  @media ${theme.media.desktop} {
     flex-direction: row;
+    justify-content: center;
+
   }
 `;

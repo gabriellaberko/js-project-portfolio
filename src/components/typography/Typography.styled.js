@@ -20,6 +20,25 @@ const weightMapping = {
   xbold: 800
 };
 
+const typographyConfig = {
+  h1: {
+    mobile: { size: "80px", weight: 700 },
+    desktop: { size: "100px", weight: 700 }
+  },
+  h2: {
+    mobile: { size: "60px", weight: 700 },
+    desktop: { size: "80px", weight: 700 }
+  },
+  h3: {
+    mobile: { size: "30px", weight: 500 },
+    desktop: { size: "24px", weight: 500 }
+  },
+  p: {
+    mobile: { size: "16px", weight: 400 },
+    desktop: { size: "18px", weight: 400 }
+  }
+}
+
 
 export const StyledTypography = styled.div`
   margin: 0 0 16px 0;
@@ -28,14 +47,14 @@ export const StyledTypography = styled.div`
   // firsly check if size/weight values have been put manually, otherwise use pre-defined values for media size:
 
     // mobile (as default)
-    font-size: ${({ as, size }) => size ? sizeMapping[size] : theme.typographyConfig[as]?.mobile.size};
+    font-size: ${({ as, size }) => size ? sizeMapping[size] : typographyConfig[as]?.mobile.size};
     
-    font-weight: ${({ as, weight }) => weight ? weightMapping[weight] : theme.typographyConfig[as]?.mobile.weight};
+    font-weight: ${({ as, weight }) => weight ? weightMapping[weight] : typographyConfig[as]?.mobile.weight};
 
     // desktop
     @media ${theme.media.desktop} {
-      font-size: ${({ as, size }) => size ? sizeMapping[size] : theme.typographyConfig[as]?.desktop.size};
+      font-size: ${({ as, size }) => size ? sizeMapping[size] : typographyConfig[as]?.desktop.size};
     
-      font-weight: ${({ as, weight }) => weight ? weightMapping[weight] : theme.typographyConfig[as]?.desktop.weight};
+      font-weight: ${({ as, weight }) => weight ? weightMapping[weight] : typographyConfig[as]?.desktop.weight};
     }
 `;

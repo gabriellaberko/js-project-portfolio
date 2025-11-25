@@ -4,32 +4,18 @@ import skillsData from '../../data/skills.json';
 import { SkillsBox } from '../skills/SkillsBox';
 import { Typography } from '../typography/typography';
 import { StyledSection } from './Section.styled';
+import { StyledSkillsContainer } from '../skills/SkillsContainer.styled';
 
 
 export const SkillsSection = () => {
   return (
     <StyledSection>
        <Typography as="h2">Skills</Typography>
-      <StyledWrapper>
+      <StyledSkillsContainer>
         {skillsData.skills.map((skillObj, index) => (
           <SkillsBox key = {index} skillObj = {skillObj}  />
         ))}
-      </StyledWrapper>
+      </StyledSkillsContainer>
     </StyledSection>
   );
 }
-
-
-
-export const StyledWrapper= styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 18px;
-
-
-  @media (min-width: 768px) {
-    flex-direction: row;
-
-  }
-`;

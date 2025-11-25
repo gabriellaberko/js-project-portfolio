@@ -29,7 +29,7 @@ export const StyledContentDiv = styled.div`
 `;
 
 export const StyledTextDiv = styled.div `
-  height: 160px;
+  height: 200px;
   overflow: hidden;
   padding-bottom: 1em; 
   position: relative;

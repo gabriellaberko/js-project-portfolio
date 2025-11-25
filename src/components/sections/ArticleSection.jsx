@@ -3,7 +3,7 @@ import articleData from '../../data/articles.json';
 import { Article } from '../cards/Article';
 import { Typography } from '../typography/typography';
 import { StyledCardContainer } from '../cards/CardContainer.styled';
-import styled from 'styled-components';
+import { StyledSection } from './Section.styled';
 
 export const ArticleSection = () => {
   return (
@@ -17,10 +17,3 @@ export const ArticleSection = () => {
   </StyledSection>
   );
 }
-
-export const StyledSection = styled.section `
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 32px;
-`;

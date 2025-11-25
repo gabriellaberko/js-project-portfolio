@@ -8,7 +8,7 @@ export const SkillsBox = ({ skillObj } ) => {
   return (
   <>
   <SkillsBoxDiv>
-    <Typography size="medium" weight="medium">{skillObj.title}</Typography>
+    <Typography as="h3" weight="bold">{skillObj.title}</Typography>
     <div className="skill-list">
       {skillObj.skills.map((skill, index) => (
         <SkillsList key={index} skill = {skill}/>
