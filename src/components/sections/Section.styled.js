@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import { theme } from "../theme/Theme.styled";
 
 export const StyledSection = styled.section`
   display: flex;
@@ -21,6 +21,14 @@ export const StyledIntroSection = styled.section`
     gap: 32px;
     align-items: center;
     justify-content: space-evenly;
+  }
+`;
+
+export const StyledWrapper = styled.div`
+  text-align: center;
+
+  @media ${theme.media.desktop} {
+    text-align: initial;
   }
 `;
 

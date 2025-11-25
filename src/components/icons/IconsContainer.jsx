@@ -21,7 +21,7 @@ export const IconsContainer = () => {
 export const StyledWrapper = styled.div `
   display: flex;
   gap: 24px;
-  margin-top: 20px;
+  margin-top: 32px;
   align-items: center;
 `;
 

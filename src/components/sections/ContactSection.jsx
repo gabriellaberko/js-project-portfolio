@@ -2,12 +2,12 @@ import React from 'react';
 import { IconsContainer } from '../icons/IconsContainer';
 import { Typography } from '../typography/typography';
 import { Img } from '../images/Img';
-import { StyledSection } from './Section.styled';
+import { StyledContactSection } from './Section.styled';
 import { StyledContent } from './Section.styled';
 
 export const ContactSection = () => {
   return (
-    <StyledSection>
+    <StyledContactSection>
         <Img src="/profile-circle.png" alt="profile picture" height="400px"/>
         <StyledContent>
           <Typography as="h2">Let's Talk!</Typography>
@@ -16,6 +16,6 @@ export const ContactSection = () => {
           <Typography as="h3">gabriellaberko@live.se</Typography>
           <IconsContainer />
         </StyledContent>
-    </StyledSection>
+    </StyledContactSection>
   );
 }
