@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-export const Img = ({ src, alt, height="200px" }) => {
+export const Img = ({ src, alt, height="280px" }) => {
   return (
     <StyledImg src={src} alt={alt} height={height}/>
   );

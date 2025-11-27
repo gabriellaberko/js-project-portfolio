@@ -1,21 +1,22 @@
 import React from 'react';
 import { SkillsList } from './SkillsList';
 import { Typography } from '../typography/typography';
-import { SkillsBoxDiv } from './SkillsBox.styled';
-import { LineDivider } from './SkillsBox.styled';
+import { StyledSkillsBoxDiv } from './Skills.styled';
+import { StyledLineDivider } from './Skills.styled';
+
 
 export const SkillsBox = ({ skillObj } ) => {
   return (
   <>
-  <SkillsBoxDiv>
+  <StyledSkillsBoxDiv>
     <Typography as="h3" weight="bold">{skillObj.title}</Typography>
-    <div className="skill-list">
+    <div>
       {skillObj.skills.map((skill, index) => (
         <SkillsList key={index} skill = {skill}/>
       ))}
     </div>
-  </SkillsBoxDiv>
-  <LineDivider></LineDivider>
+  </StyledSkillsBoxDiv>
+  <StyledLineDivider></StyledLineDivider>
   </>
   );
 }

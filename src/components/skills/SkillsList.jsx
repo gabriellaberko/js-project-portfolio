@@ -1,9 +1,10 @@
 import React from 'react';
+import { StyledSkillsList } from './Skills.styled';
 
 export const SkillsList = ({ skill }) => {
   return (
-      <ul>
+      <StyledSkillsList>
         <li>{skill}</li>
-      </ul>
+      </StyledSkillsList>
   );
 }
