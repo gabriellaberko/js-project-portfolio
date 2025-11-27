@@ -15,8 +15,8 @@ export const Article = ({ article, onOpen }) => {
           </div>
           <StyledTextDivFaded>
             <Typography as="h3">{article.title}</Typography>
-            {article.sections.map(section => (
-              <Typography>{section}</Typography>
+            {article.sections.map((section, index) => (
+              <Typography key={index}>{section}</Typography>
             ))}
           </StyledTextDivFaded>
           <SecondaryButton onClick={onOpen}>

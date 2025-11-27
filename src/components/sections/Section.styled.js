@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { theme } from "../theme/Theme.styled";
+import { theme } from "../globalStyles/Theme.styled";
 
 export const StyledSection = styled.section`
   display: flex;
@@ -7,6 +7,7 @@ export const StyledSection = styled.section`
   align-items: center;
   justify-content: center;
   gap: 32px;
+  margin: 100px 0;
 `;
 
 
@@ -15,6 +16,7 @@ export const StyledSection = styled.section`
 export const StyledIntroSection = styled.section`
   display: flex;
   flex-direction: column;
+  margin: 100px 0;
 
   @media ${theme.media.desktop} {
     flex-direction: row;

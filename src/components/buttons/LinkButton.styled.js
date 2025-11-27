@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { theme } from "../theme/Theme.styled";
+import { theme } from "../globalStyles/Theme.styled";
 
 export const StyledLinkButtonFilled = styled.a`
   padding: 8px 16px;

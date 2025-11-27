@@ -17,7 +17,6 @@ export const ArticleSection = () => {
     const [selectedArticle, setSelectedArticle] = useState(null);
 
     const openModal= article => {
-      console.log("Opening modal for:", article.title);
       setSelectedArticle(article);
     }
     
@@ -47,8 +46,8 @@ export const ArticleSection = () => {
         <Modal onClose={closeModal}>
           <StyledModalImg src={selectedArticle.image} alt="article image" />
           <Typography as="h3">{selectedArticle.title}</Typography>
-          {selectedArticle.sections.map(section => (
-              <Typography>{section}</Typography>
+          {selectedArticle.sections.map((section, index) => (
+              <Typography key={index}>{section}</Typography>
             ))}
         </Modal>
       )}

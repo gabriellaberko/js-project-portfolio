@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { theme } from "../theme/Theme.styled";
+import { theme } from "../globalStyles/Theme.styled";
 
 export const StyledSkillsBoxDiv = styled.div `
   flex: 1;
