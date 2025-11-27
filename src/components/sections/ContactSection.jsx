@@ -1,6 +1,6 @@
 import React from 'react';
 import { IconsContainer } from '../icons/IconsContainer';
-import { Typography } from '../typography/typography';
+import { Typography } from '../typography/CustomTypography';
 import { Img } from '../images/Img';
 import { StyledContactSection } from './Section.styled';
 import { StyledContent } from './Section.styled';

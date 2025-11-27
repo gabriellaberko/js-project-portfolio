@@ -1,7 +1,7 @@
 import React from 'react';
 import skillsData from '../../data/skills.json';
 import { SkillsBox } from '../skills/SkillsBox';
-import { Typography } from '../typography/Typography';
+import { Typography } from '../typography/CustomTypography';
 import { StyledSection } from './Section.styled';
 import { StyledSkillsContainer } from '../skills/SkillsContainer.styled';
 import { AnimatedSection } from '../animations/AnimatedSection';
