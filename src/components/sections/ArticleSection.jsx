@@ -47,7 +47,9 @@ export const ArticleSection = () => {
         <Modal onClose={closeModal}>
           <StyledModalImg src={selectedArticle.image} alt="article image" />
           <Typography as="h3">{selectedArticle.title}</Typography>
-          <Typography>{selectedArticle.content}</Typography>
+          {selectedArticle.sections.map(section => (
+              <Typography>{section}</Typography>
+            ))}
         </Modal>
       )}
     </>
