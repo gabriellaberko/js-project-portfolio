@@ -5,7 +5,7 @@ import { PrimaryLinkButton } from '../buttons/LinkButton';
 import { SecondaryLinkButton } from '../buttons/LinkButton';
 import { GlobeIcon } from '../icons/GlobeIcon';
 import { GitHubIcon } from '../icons/GitHubIcon';
-import { Typography } from '../typography/typography';
+import { Typography } from '../typography/Typography';
 import { StyledCardDiv } from './Card.styled';
 import { StyledContentDiv } from './Card.styled';
 import { StyledTextDiv } from './Card.styled';

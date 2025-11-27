@@ -1,5 +1,5 @@
 import React from 'react';
-import { Typography } from '../typography/typography';
+import { Typography } from '../typography/Typography';
 import { StyledIntroSection } from './Section.styled';
 import { IconsContainer } from '../icons/IconsContainer';
 import { AnimatedSection } from '../animations/AnimatedSection';

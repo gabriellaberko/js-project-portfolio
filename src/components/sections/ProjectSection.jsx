@@ -1,7 +1,7 @@
 import React from 'react';
 import projectData from '../../data/projects.json';
 import { Project } from '../cards/Project';
-import { Typography } from '../typography/typography';
+import { Typography } from '../typography/Typography';
 import { StyledCardContainer } from '../cards/CardContainer.styled';
 import { StyledSection } from './Section.styled';
 import { AnimatedSection } from '../animations/AnimatedSection';
