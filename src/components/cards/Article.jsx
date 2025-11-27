@@ -6,20 +6,20 @@ import { StyledCardDiv } from './Card.styled';
 import { StyledTextDivFaded } from './Card.styled';
 
 
-export const Article = ({ article }) => {
+export const Article = ({ article, onOpen }) => {
       return (
         <StyledCardDiv>
-          <Img src={article.image} alt="article" />
+          <Img src={article.image} alt="article image" />
           <div className="tags">
               <Typography>{article.tag}</Typography>
-            </div>
+          </div>
           <StyledTextDivFaded>
             <Typography as="h3">{article.title}</Typography>
             <Typography>{article.content}</Typography>
-            </StyledTextDivFaded>
-            <SecondaryButton>
-              View article 
-            </SecondaryButton>
+          </StyledTextDivFaded>
+          <SecondaryButton onClick={onOpen}>
+            View article 
+          </SecondaryButton>
         </StyledCardDiv>
     );
 }

@@ -15,7 +15,7 @@ const weightMapping = {
   xlight: 200,
   light: 300,
   regular: 400,
-  medium: 500,
+  medium: 600,
   bold: 700,
   xbold: 800
 };
@@ -30,8 +30,8 @@ const typographyConfig = {
     desktop: { size: "80px", weight: 700 }
   },
   h3: {
-    mobile: { size: "30px", weight: 500 },
-    desktop: { size: "24px", weight: 500 }
+    mobile: { size: "30px", weight: 600 },
+    desktop: { size: "24px", weight: 600 }
   },
   p: {
     mobile: { size: "16px", weight: 400 },
