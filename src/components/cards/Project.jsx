@@ -4,7 +4,7 @@ import { Img } from '../images/Img';
 import { PrimaryLinkButton } from '../buttons/LinkButton';
 import { SecondaryLinkButton } from '../buttons/LinkButton';
 import { GlobeIcon } from '../icons/GlobeIcon';
-import { GitHubIcon } from '../icons/GitHubIcon';
+import { GithubIcon } from '../icons/GithubIcon';
 import { Typography } from '../typography/CustomTypography';
 import { StyledCardDiv } from './Card.styled';
 import { StyledContentDiv } from './Card.styled';
@@ -36,7 +36,7 @@ export const Project = ({ project }) => {
                 Live Demo
               </PrimaryLinkButton>
               <SecondaryLinkButton link={project.github}>
-                <GitHubIcon />
+                <GithubIcon />
                 View Code
               </SecondaryLinkButton>
             </StyledButtonDiv>

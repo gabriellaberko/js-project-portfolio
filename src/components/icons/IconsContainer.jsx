@@ -1,6 +1,6 @@
 import React from 'react';
-import { GitHubIcon } from '../icons/GitHubIcon';
-import { LinkedInIcon } from '../icons/LinkedinIcon'; 
+import { GithubIcon } from './GithubIcon';
+import { LinkedinIcon } from './LinkedinIcon'; 
 import { LinkIcon } from '../icons/LinkIcon';
 import styled from 'styled-components';
 
@@ -8,10 +8,10 @@ export const IconsContainer = () => {
   return (
     <StyledWrapper>
       <LinkIcon link="https://www.linkedin.com/in/gabriella-berkowicz/">
-        <LinkedInIcon />
+        <LinkedinIcon />
       </LinkIcon>
       <LinkIcon link="https://github.com/gabriellaberko">
-        <GitHubIcon />
+        <GithubIcon />
       </LinkIcon>
     </StyledWrapper>
   );
