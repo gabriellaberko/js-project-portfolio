@@ -17,7 +17,7 @@ export const AnimatedSection = ({ children, direction = "up" }) => {
       ([entry]) => {
         if (entry.isIntersecting) setVisible(true);
       },
-      { threshold: 0.4 }
+      { threshold: 0.3 }
     );
     if (ref.current) observer.observe(ref.current);
 

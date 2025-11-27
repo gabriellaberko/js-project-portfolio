@@ -1,6 +1,5 @@
 import React from 'react';
 import { Typography } from '../typography/typography';
-import { ProfileImg } from '../images/ProfileImg';
 import { StyledIntroSection } from './Section.styled';
 import { IconsContainer } from '../icons/IconsContainer';
 import { AnimatedSection } from '../animations/AnimatedSection';
