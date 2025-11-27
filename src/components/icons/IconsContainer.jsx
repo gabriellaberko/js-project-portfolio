@@ -1,6 +1,6 @@
 import React from 'react';
-import { GithubIcon } from './GithubIcon';
-import { LinkedinIcon } from './LinkedinIcon'; 
+import { GithubIcon } from './Github';
+import { LinkedinIcon } from './Linkedin'; 
 import { LinkIcon } from '../icons/LinkIcon';
 import styled from 'styled-components';
 
