@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { theme } from "../globalStyles/Theme.styled";
+
 
 export const StyledSection = styled.section`
   display: flex;
@@ -11,14 +11,14 @@ export const StyledSection = styled.section`
 `;
 
 
-// intro section
+/*--- intro section ---*/
 
 export const StyledIntroSection = styled.header`
   display: flex;
   flex-direction: column;
   margin-bottom: 100px;
 
-  @media ${theme.media.desktop} {
+  @media ${(props) => props.theme.media.desktop} {
     flex-direction: row;
     gap: 32px;
     align-items: center;
@@ -29,13 +29,13 @@ export const StyledIntroSection = styled.header`
 export const StyledWrapper = styled.div`
   text-align: center;
 
-  @media ${theme.media.desktop} {
+  @media ${(props) => props.theme.media.desktop} {
     text-align: initial;
   }
 `;
 
 
-//contact section
+/*--- contact section ---*/
 
 export const StyledContactSection = styled.footer`
   display: flex;
@@ -45,7 +45,7 @@ export const StyledContactSection = styled.footer`
   gap: 32px;
   margin: 100px 0;
 
-  @media ${theme.media.desktop} {
+  @media ${(props) => props.theme.media.desktop} {
     flex-direction: row;
   }
 `;
@@ -55,7 +55,7 @@ export const StyledContent = styled.div`
   flex-direction: column;
   align-items: center;
 
-  @media ${theme.media.desktop} {
+  @media ${(props) => props.theme.media.desktop} {
     align-items: flex-start;
   }
 `

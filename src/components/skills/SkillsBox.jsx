@@ -1,6 +1,6 @@
 import React from 'react';
 import { SkillsList } from './SkillsList';
-import { Typography } from '../typography/CustomTypography';
+import { Typography } from '../style/typography/CustomTypography';
 import { StyledSkillsBoxDiv } from './Skills.styled';
 import { StyledLineDivider } from './Skills.styled';
 

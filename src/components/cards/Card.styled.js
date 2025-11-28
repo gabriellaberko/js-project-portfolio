@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { theme } from "../globalStyles/Theme.styled";
 
 export const StyledCardDiv = styled.div`
   background-color: #ffffff;
@@ -11,8 +10,7 @@ export const StyledCardDiv = styled.div`
   flex: 1;
   gap: 24px;
   transition: transform 0.25s ease;
-  border: 1px solid rgba(0, 0, 0, 0.06);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04); 
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   max-width: 400px;
 
   &:hover {
@@ -58,8 +56,7 @@ export const StyledButtonDiv = styled.div `
   align-items: column;
   gap: 16px;
 
-
-  @media ${theme.media.desktop} {
+  @media ${(props) => props.theme.media.desktop} {
     flex-direction: row;
   }
 `;

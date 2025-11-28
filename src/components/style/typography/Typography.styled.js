@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { theme } from "../globalStyles/Theme.styled";
+
 
 // map the size and weight values
 const sizeMapping = {
@@ -52,7 +52,7 @@ export const StyledTypography = styled.div`
     font-weight: ${({ as, weight }) => weight ? weightMapping[weight] : typographyConfig[as]?.mobile.weight};
 
     // desktop
-    @media ${theme.media.desktop} {
+    @media ${(props) => props.theme.media.desktop} {
       font-size: ${({ as, size }) => size ? sizeMapping[size] : typographyConfig[as]?.desktop.size};
     
       font-weight: ${({ as, weight }) => weight ? weightMapping[weight] : typographyConfig[as]?.desktop.weight};

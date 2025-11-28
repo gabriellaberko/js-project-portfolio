@@ -1,12 +1,12 @@
 import styled from "styled-components";
-import { theme } from "../globalStyles/Theme.styled";
+
 
 export const StyledSkillsBoxDiv = styled.div `
   flex: 1;
   text-align: center;
   padding: 0 7px;
 
-  ${theme.media.desktop} {
+  @media ${(props) => props.theme.media.desktop} {
     width: 200px;
   }
 `;
@@ -23,7 +23,7 @@ export const StyledLineDivider = styled.div`
     border-bottom: 2px solid #FD6F00; /* horizontal line */
   }
 
-  @media ${theme.media.desktop} {
+  @media ${(props) => props.theme.media.desktop} {
     height: auto;
 
     &:not(:last-child) {

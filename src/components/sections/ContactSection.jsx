@@ -1,10 +1,9 @@
 import React from 'react';
 import { IconsContainer } from '../icons/IconsContainer';
-import { Typography } from '../typography/CustomTypography';
+import { Typography } from '../style/typography/CustomTypography';
 import { Img } from '../images/Img';
 import { StyledContactSection } from './Section.styled';
 import { StyledContent } from './Section.styled';
-import { AnimatedSection } from '../animations/AnimatedSection';
 
 
 export const ContactSection = () => {

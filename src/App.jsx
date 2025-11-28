@@ -1,7 +1,7 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
-import { theme } from './components/globalStyles/Theme.styled';
-import { GlobalStyle } from './components/globalStyles/GlobalStyle';
+import { theme } from './components/style/Theme.styled';
+import { GlobalStyle } from './components/style/GlobalStyle';
 import { IntroSection } from './components/sections/IntroSection';
 import { ProjectSection } from './components/sections/ProjectSection';
 import { SkillsSection } from './components/sections/SkillsSection';

@@ -1,12 +1,11 @@
 import React from 'react';
 import projectData from '../../data/projects.json';
 import { Project } from '../cards/Project';
-import { Typography } from '../typography/CustomTypography';
+import { Typography } from '../style/typography/CustomTypography';
 import { StyledCardContainer } from '../cards/CardContainer.styled';
 import { StyledSection } from './Section.styled';
 import { AnimatedSection } from '../animations/AnimatedSection';
 import styled from 'styled-components';
-
 
 
 export const ProjectSection = () => {

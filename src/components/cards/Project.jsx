@@ -4,7 +4,7 @@ import { Img } from '../images/Img';
 import { LinkButton } from '../buttons/Button';
 import { GlobeIcon } from '../icons/Globe';
 import { GithubIcon } from '../icons/Github';
-import { Typography } from '../typography/CustomTypography';
+import { Typography } from '../style/typography/CustomTypography';
 import { StyledCardDiv } from './Card.styled';
 import { StyledContentDiv } from './Card.styled';
 import { StyledTextDiv } from './Card.styled';
