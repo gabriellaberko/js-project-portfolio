@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { theme } from "../globalStyles/Theme.styled";
 
 export const StyledCardDiv = styled.div`
-  background-color: white;
+  background-color: #ffffff;
   border-radius: 12px;
   padding: 16px;
   overflow: hidden;
@@ -11,12 +11,16 @@ export const StyledCardDiv = styled.div`
   flex: 1;
   gap: 24px;
   transition: transform 0.25s ease;
-  box-shadow: 0 0 5px rgb(193, 193, 193);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04); 
   max-width: 400px;
 
   &:hover {
     transform: translate(0, -5px);
-    box-shadow: 0 0 8px 4px rgba(253, 111, 0, 0.2);
+    box-shadow:
+      0 0 6px rgba(253, 111, 0, 0.15), 
+      0 8px 20px rgba(0, 0, 0, 0.10);   
+    border: 1px solid rgba(253, 111, 0, 0.35);
   }
 `;
 

@@ -16,7 +16,7 @@ export const StyledSection = styled.section`
 export const StyledIntroSection = styled.section`
   display: flex;
   flex-direction: column;
-  margin: 100px 0;
+  margin-bottom: 100px;
 
   @media ${theme.media.desktop} {
     flex-direction: row;
