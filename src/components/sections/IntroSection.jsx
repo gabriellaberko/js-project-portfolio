@@ -7,7 +7,6 @@ import { Img } from '../images/Img';
 
 export const IntroSection = () => {
   return (
-    <AnimatedSection direction="up"> 
       <StyledIntroSection>
         <div>
           <Typography size="m" weight="medium">I am Gabriella Berkowicz</Typography>
@@ -20,6 +19,5 @@ export const IntroSection = () => {
         </div>
         <Img src="/profile.png" alt="profile picture" height="400px"/>
       </StyledIntroSection>
-    </AnimatedSection>
   );
 }

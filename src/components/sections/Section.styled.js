@@ -23,6 +23,7 @@ export const StyledIntroSection = styled.header`
     gap: 32px;
     align-items: center;
     justify-content: space-evenly;
+    margin-top: 24px;
   }
 `;
 
