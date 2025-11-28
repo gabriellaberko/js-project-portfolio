@@ -3,7 +3,7 @@ import React from 'react';
 export const LinkIcon = ({ children, link, ariaLabel }) => {
   return (
     <a 
-      aria-label={ariaLabel}
+      ariaLabel={ariaLabel}
       href={link}
       target="_blank"
     >

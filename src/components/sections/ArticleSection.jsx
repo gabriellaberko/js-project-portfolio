@@ -7,7 +7,6 @@ import { StyledSection } from './Section.styled';
 import { AnimatedSection } from '../animations/AnimatedSection';
 import { Modal } from '../modal/Modal';
 import { useState } from 'react';
-import { Img } from '../images/Img';
 import { StyledModalImg } from '../modal/Modal.styled';
 
 

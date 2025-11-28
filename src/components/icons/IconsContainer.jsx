@@ -7,10 +7,10 @@ import styled from 'styled-components';
 export const IconsContainer = () => {
   return (
     <StyledWrapper>
-      <LinkIcon aria-label="LinkedIn" link="https://www.linkedin.com/in/gabriella-berkowicz/">
+      <LinkIcon ariaLabel="LinkedIn" link="https://www.linkedin.com/in/gabriella-berkowicz/">
         <LinkedinIcon />
       </LinkIcon>
-      <LinkIcon aria-label="GitHub" link="https://github.com/gabriellaberko">
+      <LinkIcon ariaLabel="GitHub" link="https://github.com/gabriellaberko">
         <GithubIcon />
       </LinkIcon>
     </StyledWrapper>
