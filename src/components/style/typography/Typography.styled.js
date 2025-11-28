@@ -22,11 +22,11 @@ const weightMapping = {
 
 const typographyConfig = {
   h1: {
-    mobile: { size: "80px", weight: 700 },
+    mobile: { size: "60px", weight: 700 },
     desktop: { size: "100px", weight: 700 }
   },
   h2: {
-    mobile: { size: "60px", weight: 700 },
+    mobile: { size: "52px", weight: 700 },
     desktop: { size: "80px", weight: 700 }
   },
   h3: {

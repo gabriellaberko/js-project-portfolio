@@ -12,6 +12,11 @@ export const StyledCardDiv = styled.div`
   transition: transform 0.25s ease;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   max-width: 400px;
+  width: 100%;
+
+  @media ${(props) => props.theme.media.desktop} {
+    width: initial;
+  }
 
   &:hover {
     transform: translate(0, -5px);
@@ -30,10 +35,14 @@ export const StyledContentDiv = styled.div`
 `;
 
 export const StyledTextDiv = styled.div `
-  height: 200px;
   overflow: hidden;
   padding-bottom: 1em; 
   position: relative;
+  max-height: 250px;
+
+  @media ${(props) => props.theme.media.desktop} {
+    height: 200px;
+  }
 `;
 
 export const StyledTextDivFaded = styled(StyledTextDiv)`
