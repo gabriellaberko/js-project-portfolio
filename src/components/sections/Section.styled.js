@@ -13,7 +13,7 @@ export const StyledSection = styled.section`
 
 // intro section
 
-export const StyledIntroSection = styled.section`
+export const StyledIntroSection = styled.header`
   display: flex;
   flex-direction: column;
   margin-bottom: 100px;
@@ -37,7 +37,13 @@ export const StyledWrapper = styled.div`
 
 //contact section
 
-export const StyledContactSection = styled(StyledSection)`
+export const StyledContactSection = styled.footer`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  margin: 100px 0;
 
   @media ${theme.media.desktop} {
     flex-direction: row;

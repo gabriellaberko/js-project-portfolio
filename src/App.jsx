@@ -16,10 +16,12 @@ export const App = () => {
     <ThemeProvider theme={theme}>
       <GlobalStyle />
         <IntroSection />
-        <SkillsSection />
-        <ProjectSection />
-        <TechSection />
-        <ArticleSection />
+        <main>
+          <SkillsSection />
+          <ProjectSection />
+          <TechSection />
+          <ArticleSection />
+        </main>
         <ContactSection />
     </ThemeProvider>
     </>

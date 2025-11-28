@@ -1,9 +1,9 @@
 import React from 'react';
 
-export const LinkIcon = ({ children, link }) => {
+export const LinkIcon = ({ children, link, ariaLabel }) => {
   return (
     <a 
-      className="icon"
+      aria-label={ariaLabel}
       href={link}
       target="_blank"
     >
