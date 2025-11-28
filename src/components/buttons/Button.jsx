@@ -1,10 +1,28 @@
 import React from 'react';
-import { StyledButtonOutlined } from './Button.styled';
+import { StyledButton } from './Button.styled';
+import { StyledLinkButton } from './Button.styled';
 
-export const SecondaryButton = ({ onClick, children} ) => {
+
+export const LinkButton = ({ variant="primaryBtn", link, children, ...props }) => {
   return (
-    <StyledButtonOutlined className="secondary-btn" onClick={onClick}>
+    <StyledLinkButton 
+      variant={variant}
+      href={link}
+      target="_blank"
+      {...props}
+    >
       {children}
-    </StyledButtonOutlined>
+    </StyledLinkButton>
+  );
+}
+
+export const Button = ({ variant="secondaryBtn", children, ...props} ) => {
+  return (
+    <StyledButton 
+      variant="secondaryBtn" 
+      {...props}
+    >
+      {children}
+    </StyledButton>
   );
 }

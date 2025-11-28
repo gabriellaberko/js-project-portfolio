@@ -1,8 +1,7 @@
 import React from 'react';
 import { Tags } from './Tags';
 import { Img } from '../images/Img';
-import { PrimaryLinkButton } from '../buttons/LinkButton';
-import { SecondaryLinkButton } from '../buttons/LinkButton';
+import { LinkButton } from '../buttons/Button';
 import { GlobeIcon } from '../icons/Globe';
 import { GithubIcon } from '../icons/Github';
 import { Typography } from '../typography/CustomTypography';
@@ -31,14 +30,14 @@ export const Project = ({ project }) => {
             </div>
             </StyledContentDiv>
             <StyledButtonDiv>
-              <PrimaryLinkButton link={project.netlify}>
+              <LinkButton link={project.netlify}>
                 <GlobeIcon />
                 Live Demo
-              </PrimaryLinkButton>
-              <SecondaryLinkButton link={project.github}>
+              </LinkButton>
+              <LinkButton variant="secondaryBtn" link={project.github}>
                 <GithubIcon />
                 View Code
-              </SecondaryLinkButton>
+              </LinkButton>
             </StyledButtonDiv>
         </StyledCardDiv>
     );

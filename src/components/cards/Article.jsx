@@ -1,6 +1,6 @@
 import React from 'react';
 import { Typography } from '../typography/CustomTypography';
-import { SecondaryButton } from '../buttons/Button';
+import { Button } from '../buttons/Button';
 import { Img } from '../images/Img';
 import { StyledCardDiv } from './Card.styled';
 import { StyledTextDivFaded } from './Card.styled';
@@ -19,9 +19,9 @@ export const Article = ({ article, onOpen }) => {
               <Typography key={index}>{section}</Typography>
             ))}
           </StyledTextDivFaded>
-          <SecondaryButton onClick={onOpen}>
+          <Button onClick={onOpen}>
             View article 
-          </SecondaryButton>
+          </Button>
         </StyledCardDiv>
     );
 }
