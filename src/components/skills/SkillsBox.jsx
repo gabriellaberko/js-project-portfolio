@@ -1,8 +1,7 @@
 import React from 'react';
 import { SkillsList } from './SkillsList';
 import { Typography } from '../style/typography/CustomTypography';
-import { StyledSkillsBoxDiv } from './Skills.styled';
-import { StyledLineDivider } from './Skills.styled';
+import { StyledSkillsBoxDiv, StyledLineDivider } from './Skills.styled';
 
 
 export const SkillsBox = ({ skillObj } ) => {

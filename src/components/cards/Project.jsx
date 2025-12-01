@@ -5,10 +5,7 @@ import { LinkButton } from '../buttons/Button';
 import { GlobeIcon } from '../icons/Globe';
 import { GithubIcon } from '../icons/Github';
 import { Typography } from '../style/typography/CustomTypography';
-import { StyledCardDiv } from './Card.styled';
-import { StyledContentDiv } from './Card.styled';
-import { StyledTextDiv } from './Card.styled';
-import { StyledButtonDiv } from './Card.styled';
+import { StyledCardDiv, StyledContentDiv, StyledTextDiv, StyledButtonDiv } from './Card.styled'
 import { StyledTagContainer } from './Tags.styled';
 
 export const Project = ({ project }) => {

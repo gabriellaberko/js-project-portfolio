@@ -1,6 +1,5 @@
 import React from 'react';
-import { StyledButton } from './Button.styled';
-import { StyledLinkButton } from './Button.styled';
+import { StyledButton, StyledLinkButton } from './Button.styled';
 
 
 export const LinkButton = ({ variant="primaryBtn", link, children, ...props }) => {

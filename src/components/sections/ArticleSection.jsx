@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState } from 'react';
 import articleData from '../../data/articles.json';
 import { Article } from '../cards/Article';
 import { Typography } from '../style/typography/CustomTypography';
@@ -6,7 +7,6 @@ import { StyledCardContainer } from '../cards/CardContainer.styled';
 import { StyledSection } from './Section.styled';
 import { AnimatedSection } from '../animations/AnimatedSection';
 import { Modal } from '../modal/Modal';
-import { useState } from 'react';
 import { StyledModalImg } from '../modal/Modal.styled';
 
 
@@ -26,7 +26,7 @@ export const ArticleSection = () => {
 
   return (
     <>
-      <AnimatedSection diredction="up">
+      <AnimatedSection direction="up">
         <StyledSection>
           <Typography as="h2">My Journey</Typography>
           <StyledCardContainer>

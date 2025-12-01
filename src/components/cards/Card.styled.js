@@ -38,11 +38,7 @@ export const StyledTextDiv = styled.div `
   overflow: hidden;
   padding-bottom: 1em; 
   position: relative;
-  max-height: 250px;
-
-  @media ${(props) => props.theme.media.desktop} {
-    height: 200px;
-  }
+  max-height: 270px;
 `;
 
 export const StyledTextDivFaded = styled(StyledTextDiv)`

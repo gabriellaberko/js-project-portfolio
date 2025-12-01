@@ -1,8 +1,5 @@
 import React from "react";
-import { StyledCrossIcon } from "./Modal.styled";
-import { StyledModal } from "./Modal.styled";
-import { StyledModalOverlay } from "./Modal.styled";
-import { StyledModalContent } from "./Modal.styled";
+import { StyledCrossIcon, StyledModal, StyledModalOverlay, StyledModalContent } from "./Modal.styled";
 import { Img } from "../images/Img";
 
 
