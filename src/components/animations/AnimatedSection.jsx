@@ -10,6 +10,10 @@ export const AnimatedSection = ({ children, direction = "up" }) => {
   // the visibility control (defaulting to false), making the component dynamic. When we update the value of visible by calling setVisible, React will re-render the component
   const [visible, setVisible] = useState(false);
 
+  // to change threshold value depending on screen size
+  const isBigScreen = window.matchMedia("(min-width: 768px)").matches;
+  const threshold = isBigScreen ? 0.3 : 0.1;
+
 
   // observes if the referenced element comes into view (becomes visible) - then call setVisible(true);
   useEffect(() => {
@@ -17,7 +21,7 @@ export const AnimatedSection = ({ children, direction = "up" }) => {
       ([entry]) => {
         if (entry.isIntersecting) setVisible(true);
       },
-      { threshold: 0.3 }
+      { threshold }
     );
     if (ref.current) observer.observe(ref.current);
 
