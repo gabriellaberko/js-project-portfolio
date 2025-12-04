@@ -4,7 +4,7 @@ import styled from "styled-components";
 // map the size and weight values
 const sizeMapping = {
   xs: "16px",
-  s: "18px",
+  s: "24px",
   m: "30px",
   l: "64px",
   xl: "80px",
@@ -22,15 +22,15 @@ const weightMapping = {
 
 const typographyConfig = {
   h1: {
-    mobile: { size: "60px", weight: 700 },
-    desktop: { size: "100px", weight: 700 }
+    mobile: { size: "54px", weight: 700 },
+    desktop: { size: "64px", weight: 700 }
   },
   h2: {
     mobile: { size: "52px", weight: 700 },
-    desktop: { size: "80px", weight: 700 }
+    desktop: { size: "64px", weight: 700 }
   },
   h3: {
-    mobile: { size: "30px", weight: 600 },
+    mobile: { size: "24px", weight: 600 },
     desktop: { size: "24px", weight: 600 }
   },
   p: {
@@ -41,7 +41,7 @@ const typographyConfig = {
 
 
 export const StyledTypography = styled.div`
-  margin: 0 0 16px 0;
+  margin: 0 0 4px 0;
   padding: 0;
 
   // firsly check if size/weight values have been put manually, otherwise use pre-defined values for media size:
