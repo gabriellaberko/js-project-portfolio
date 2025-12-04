@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import articleData from '../../data/articles.json';
 import { Article } from '../cards/Article';
-import { Typography } from '../style/typography/CustomTypography';
+import { Typography } from '../typography/CustomTypography';
 import { StyledCardContainer } from '../cards/CardContainer.styled';
 import { StyledSection } from './Section.styled';
 import { AnimatedSection } from '../animations/AnimatedSection';

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Typography } from '../style/typography/CustomTypography';
+import { Typography } from '../typography/CustomTypography';
 import { Button } from '../buttons/Button';
 import { Img } from '../images/Img';
 import { StyledCardDiv, StyledTextDivFaded } from './Card.styled';

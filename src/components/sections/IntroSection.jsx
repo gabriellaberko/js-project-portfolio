@@ -1,8 +1,7 @@
 import React from 'react';
-import { Typography } from '../style/typography/CustomTypography';
+import { Typography } from '../typography/CustomTypography';
 import { StyledIntroSection } from './Section.styled';
 import { IconsContainer } from '../icons/IconsContainer';
-import { AnimatedSection } from '../animations/AnimatedSection';
 import { Img } from '../images/Img';
 
 export const IntroSection = () => {

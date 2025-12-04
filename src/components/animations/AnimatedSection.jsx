@@ -1,5 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
 import { StyledAnimatedSection } from "./AnimatedSection.styled";
+import { theme } from "../../style/Theme.styled";
 
 
 export const AnimatedSection = ({ children, direction = "up" }) => {
@@ -11,7 +12,7 @@ export const AnimatedSection = ({ children, direction = "up" }) => {
   const [visible, setVisible] = useState(false);
 
   // to change threshold value depending on screen size
-  const isBigScreen = window.matchMedia("(min-width: 768px)").matches;
+  const isBigScreen = window.matchMedia(theme.media.tablet).matches;
   const threshold = isBigScreen ? 0.3 : 0.1;
 
 
