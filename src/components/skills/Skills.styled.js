@@ -20,7 +20,7 @@ export const StyledSkillsList = styled.ul `
 
 export const StyledLineDivider = styled.div`
   &:not(:last-child) {
-    border-bottom: 2px solid #FD6F00; /* horizontal line */
+    border-bottom: 2px solid ${(props) => props.theme.colors.main.accent}; /* horizontal line */
   }
 
   @media ${(props) => props.theme.media.desktop} {
@@ -28,7 +28,7 @@ export const StyledLineDivider = styled.div`
 
     &:not(:last-child) {
       border-bottom: none;
-      border-right: 2px solid #FD6F00; /* vertical line */
+      border-right: 2px solid ${(props) => props.theme.colors.main.accent}; /* vertical line */
     }
   }
 `;

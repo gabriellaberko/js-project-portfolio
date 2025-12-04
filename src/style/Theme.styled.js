@@ -3,7 +3,8 @@ export const theme = {
     main: {
       bg: "rgb(253, 253, 252)",
       text: "#121212",
-      icon: "#FD6F00"
+      accent: "#FD6F00",
+      outline: "rgba(253, 111, 0, 0.35)"
     },
     primaryBtn: {
       bg: "#FD6F00",

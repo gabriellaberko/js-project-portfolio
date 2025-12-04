@@ -23,7 +23,7 @@ export const StyledCardDiv = styled.div`
     box-shadow:
       0 0 6px rgba(253, 111, 0, 0.15), 
       0 8px 20px rgba(0, 0, 0, 0.10);   
-    border: 1px solid rgba(253, 111, 0, 0.35);
+    outline: 1px solid ${(props) => props.theme.colors.main.outline};
   }
 `;
 
