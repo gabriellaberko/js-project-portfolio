@@ -4,7 +4,7 @@ import styled from "styled-components";
 // map the size and weight values
 const sizeMapping = {
   xs: "16px",
-  s: "24px",
+  s: "22px",
   m: "30px",
   l: "64px",
   xl: "80px",

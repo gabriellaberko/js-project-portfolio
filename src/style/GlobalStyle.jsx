@@ -10,6 +10,10 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
+  /* h1 {
+    color: ${(props) => props.theme.colors.main.accent}
+  } */
+
   p {
   margin: 0;
   }

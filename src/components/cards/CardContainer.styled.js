@@ -2,8 +2,15 @@ import styled from "styled-components";
 
 export const StyledCardContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-gap: 16px;
-  width: 100%;
-  justify-items: center;
+`;
+
+export const StyledProjectCardContainer = styled(StyledCardContainer)`
+  @media ${(props) => props.theme.media.desktop} {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-top: 24px;
+  }
 `;

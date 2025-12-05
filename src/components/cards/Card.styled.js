@@ -19,13 +19,26 @@ export const StyledCardDiv = styled.div`
   }
 
   &:hover {
-    transform: translate(0, -5px);
+    transform: scale(1.02);
     box-shadow:
       0 0 6px rgba(253, 111, 0, 0.15), 
       0 8px 20px rgba(0, 0, 0, 0.10);   
-    outline: 1px solid ${(props) => props.theme.colors.main.outline};
   }
 `;
+
+export const StyledProjectCardDiv = styled(StyledCardDiv)`
+  max-width: initial;
+  width: initial;
+
+  @media ${(props) => props.theme.media.desktop} {
+    flex-direction: row;
+    justify-content: space-around;
+    box-shadow: none;
+    margin: 0 20px;
+    flex-direction: ${({ reverse }) => (reverse ? "row-reverse" : "row")}; //reverse the content for every second project
+  }
+`;
+
 
 export const StyledContentDiv = styled.div`
   display: flex;
@@ -38,10 +51,11 @@ export const StyledTextDiv = styled.div `
   overflow: hidden;
   padding-bottom: 1em; 
   position: relative;
-  max-height: 270px;
 `;
 
 export const StyledTextDivFaded = styled(StyledTextDiv)`
+  max-height: 270px;
+
   // fade end of text content
   &::after {
     content: '';
@@ -63,5 +77,11 @@ export const StyledButtonDiv = styled.div `
 
   @media ${(props) => props.theme.media.desktop} {
     flex-direction: row;
+  }
+`;
+
+export const StyledProjectContentWrapper = styled.div`
+  @media ${(props) => props.theme.media.desktop} {
+    width: 50%;
   }
 `;

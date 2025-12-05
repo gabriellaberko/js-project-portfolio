@@ -15,4 +15,5 @@ export const StyledTagContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 4px;
+  margin: 8px 0;
 `;

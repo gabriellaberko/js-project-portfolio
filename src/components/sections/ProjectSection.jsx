@@ -2,26 +2,27 @@ import React from 'react';
 import projectData from '../../data/projects.json';
 import { Project } from '../cards/Project';
 import { Typography } from '../typography/CustomTypography';
-import { StyledCardContainer } from '../cards/CardContainer.styled';
+import { StyledProjectCardContainer } from '../cards/CardContainer.styled';
 import { StyledSection } from './Section.styled';
-import { AnimatedSection } from '../animations/AnimatedSection';
+import { AnimatedProjectSection } from '../animations/AnimatedProjectSection';
 import styled from 'styled-components';
 
 
 export const ProjectSection = () => {
+
   return (
-    <AnimatedSection direction="up">
+    <AnimatedProjectSection>
       <StyledSection>
         <StyledWrapper>
         <Typography as="h2">Featured Projects</Typography>
         </StyledWrapper>
-        <StyledCardContainer>
+        <StyledProjectCardContainer>
           {projectData.projects.map((project, index) => (
-              <Project key = {index} project = {project}  />
+            <Project key={index} project={project} index={index} />
           ))}
-        </StyledCardContainer>
+      </StyledProjectCardContainer>
       </StyledSection>
-    </AnimatedSection>
+    </AnimatedProjectSection>
   );
 }
 

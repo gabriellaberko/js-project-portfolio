@@ -1,7 +1,7 @@
 export const theme = {
   colors: {
     main: {
-      bg: "rgb(253, 253, 252)",
+      bg: "#FEFEFD",
       text: "#121212",
       accent: "#FD6F00",
       outline: "rgba(253, 111, 0, 0.35)"
