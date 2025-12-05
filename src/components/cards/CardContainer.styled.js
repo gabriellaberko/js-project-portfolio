@@ -10,7 +10,7 @@ export const StyledProjectCardContainer = styled(StyledCardContainer)`
   @media ${(props) => props.theme.media.desktop} {
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 42px;
     margin-top: 24px;
   }
 `;
