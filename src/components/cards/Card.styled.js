@@ -33,8 +33,9 @@ export const StyledProjectCardDiv = styled(StyledCardDiv)`
   @media ${(props) => props.theme.media.desktop} {
     flex-direction: row;
     justify-content: space-around;
+    gap: 12px;
     box-shadow: none;
-    margin: 0 20px;
+    padding: 32px 12px;
     flex-direction: ${({ reverse }) => (reverse ? "row-reverse" : "row")}; //reverse the content for every second project
   }
 `;
@@ -77,6 +78,7 @@ export const StyledButtonDiv = styled.div `
 
   @media ${(props) => props.theme.media.desktop} {
     flex-direction: row;
+    width: 70%;
   }
 `;
 
@@ -86,6 +88,7 @@ export const StyledProjectContentWrapper = styled.div`
   flex: 1;
   justify-content: space-between;
   @media ${(props) => props.theme.media.desktop} {
-    width: 50%;
+    max-width: 50%;
+    margin: 12px 0;
   }
 `;

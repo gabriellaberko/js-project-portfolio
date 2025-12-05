@@ -20,7 +20,7 @@ export const StyledLinkButton = styled.a`
   }
 
   @media ${(props) => props.theme.media.desktop} {
-    flex: 1;
+      flex: 1; 
   }
 `;
 
