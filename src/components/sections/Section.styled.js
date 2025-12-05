@@ -16,14 +16,15 @@ export const StyledSection = styled.section`
 export const StyledIntroSection = styled.header`
   display: flex;
   flex-direction: column;
-  margin-bottom: 50px;
+  align-items: center;
+  text-align: center;
 
   @media ${(props) => props.theme.media.desktop} {
     flex-direction: row;
     gap: 32px;
-    align-items: center;
     justify-content: space-evenly;
     margin-top: 24px;
+    text-align: initial;
   }
 `;
 

@@ -10,10 +10,26 @@ import { StyledProjectCardDiv, StyledProjectContentWrapper, StyledContentDiv, St
 import { AnimatedSection } from '../animations/AnimatedSection';
 import { theme } from '../../style/Theme.styled';
 
+const useMediaQuery = (query) => {
+  const [matches, setMatches] = useState(false);
+  
+  useEffect(() => {
+    const media = window.matchMedia(query);
+    // set initial value
+    setMatches(media.matches); 
+    const listener = (e) => setMatches(e.matches);
+    media.addEventListener('change', listener);
+    // clean-up
+    return () => media.removeEventListener('change', listener);
+  }, [query]);
+
+  return matches;
+};
 
 export const Project = ({ project, index }) => {
 
-  const isBigScreen = window.matchMedia(theme.media.desktop).matches;
+  // update reactively when window size changes
+  const isBigScreen = useMediaQuery(theme.media.desktop);
 
   const direction = index % 2 === 0 ? "right" : "left";  // even → right, odd → left
 
@@ -50,7 +66,7 @@ export const Project = ({ project, index }) => {
     <>
     {isBigScreen 
       ? (<AnimatedSection direction={direction}>{projectComponent}</AnimatedSection>) 
-      : ({projectComponent})
+      : projectComponent
     }
     </>
   );

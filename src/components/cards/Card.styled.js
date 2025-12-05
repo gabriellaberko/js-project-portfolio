@@ -12,7 +12,7 @@ export const StyledCardDiv = styled.div`
   transition: transform 0.25s ease;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   max-width: 400px;
-  width: 100%;
+  /* width: 100%; */
 
   @media ${(props) => props.theme.media.desktop} {
     width: initial;

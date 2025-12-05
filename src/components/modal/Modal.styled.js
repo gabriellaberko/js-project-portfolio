@@ -28,7 +28,7 @@ export const StyledModal = styled.div`
   background-color: white;
   padding: 20px;
   max-width: 700px;
-  border-radius: 12px;
+  border-radius: 6px;
 `;
 
 export const StyledModalContent = styled.div`
