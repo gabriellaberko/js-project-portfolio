@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Tags } from './Tags';
 import { StyledTagContainer } from './Tags.styled';
 import { Img } from '../images/Img';

@@ -81,6 +81,10 @@ export const StyledButtonDiv = styled.div `
 `;
 
 export const StyledProjectContentWrapper = styled.div`
+  display:flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-between;
   @media ${(props) => props.theme.media.desktop} {
     width: 50%;
   }
