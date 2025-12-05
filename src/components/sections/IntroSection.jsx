@@ -7,7 +7,7 @@ import { theme } from '../../style/Theme.styled';
 
 const useMediaQuery = (query) => {
   const [matches, setMatches] = useState(false);
-  
+
   useEffect(() => {
     const media = window.matchMedia(query);
     // set initial value
