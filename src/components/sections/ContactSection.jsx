@@ -8,7 +8,7 @@ import { StyledContactSection, StyledContent } from './Section.styled';
 export const ContactSection = () => {
   return (
       <StyledContactSection>
-          <Img src="/profile-filled.png" alt="profile picture" height="300px"/>
+          <Img src="/profile.png" alt="profile picture" height="300px"/>
           <StyledContent>
             <Typography as="h2">Let's Talk!</Typography>
             <Typography as="h3">Gabriella Berkowicz</Typography>
