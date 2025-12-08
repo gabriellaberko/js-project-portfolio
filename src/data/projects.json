@@ -30,6 +30,22 @@
       "github": "https://github.com/gabriellaberko/js-project-accessibility"
     },
     {
+      "title": "Happy Thoughts",
+      "image": "/happy-thoughts.png",
+      "description": "A small app where users can share and like each others' messages. Built with React, styled-components, and a REST API. Features real-time UI updates, dynamic timestamps, and automatic re-fetching to stay in sync with the backend.",
+      "tags": [
+        "JavaScript",
+        "React",
+        "State Management",
+        "Styled components",
+        "REST API",
+        "CSS",
+        "HTML"
+      ],
+      "netlify": "https://happysharing.netlify.app/",
+      "github": "https://github.com/gabriellaberko/js-project-happy-thoughts/"
+    },
+    {
       "title": "Recipe Library",
       "image": "/recipe-library.png",
       "description": "This recipe library project is built upon Spoonacular’s REST API. It features search, sorting, and filtering, as well as functionality to save favorite recipes. Local storage is used to cache previously fetched recipes and the user’s favorite recipes.",
